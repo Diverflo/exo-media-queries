@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-
         <!-- ////////////navbar//////// -->
         <div class="navbar">
             <div><p id="logo">Logo</p></div>
@@ -20,14 +19,20 @@
                     <div><p>Deconnexion</p></div>
                 </div>
                 <div id="burger">
-                    <img src="/burger.png" alt="" />
-                    <label for="inputburger"> </label>
-                    <input type="checkbox" id="inputburger" />
-                    <!-- <img src="/burger.png" alt="" /> -->
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button" />
+                        <img src="/burger.png" alt="" />
+                        <div class="item-list">
+                            <div><p>Accueil</p></div>
+                            <div><p>Articles</p></div>
+                            <div><p>Contact</p></div>
+                            <div><p>Mon compte</p></div>
+                            <div><p>Deconnexion</p></div>
+                        </div>
+                    </label>
                 </div>
             </div>
         </div>
-        <div class="test"><p>test</p></div>
 
         <!-- ///////////////
             mediaqueries 

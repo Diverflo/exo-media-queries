@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
+.menu-button-wrapper {
+    position: relative;
+
+    .item-list {
+        position: absolute;
+        right: 0vw;
+        transform: translateY(40%) scale(0);
+        background-color: #000000;
+        color: #fff;
+        width: 400%;
+        padding: 15px;
+        text-align: left;
+        font-weight: 300;
+        opacity: 0;
+    }
+
+    .menu-button {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+.menu-button {
+    &:checked ~ .item-list {
+        transform: translateY(20%) translateX(10%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* navbar */
 .navbar {
     background-color: black;
     color: white;
